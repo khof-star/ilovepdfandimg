@@ -1,0 +1,9 @@
+uploads/
+compressed_files/
+*.pdf
+*.zip
+*.jpg
+*.png
+__pycache__/
+*.pyc
+.env
