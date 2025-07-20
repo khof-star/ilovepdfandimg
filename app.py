@@ -1,38 +1,20 @@
-from flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory, abort, flash
 from werkzeug.utils import secure_filename
 from PyPDF2 import PdfMerger, PdfReader, PdfWriter
 from pdf2image import convert_from_path
 from PIL import Image
 import img2pdf
 from docx2pdf import convert as docx2pdf_convert
-import subprocess
-import zipfile
-import fitz  # This is PyMuPDF
-import os
-from flask import send_from_directory, abort
-from flask import Flask, render_template, request, send_from_directory, abort
-from werkzeug.utils import secure_filename
-import fitz  # PyMuPDF
-from PIL import Image
 from pdf2docx import Converter
-import traceback
-import os
 from pptx import Presentation
 from pptx.util import Inches
 import pdfplumber
 import pandas as pd
-from flask import request, flash, redirect
-
-
-
-
-
-
-
-
- 
-
-
+import fitz  # PyMuPDF
+import subprocess
+import zipfile
+import traceback
+import os
 
 app = Flask(__name__)
 
