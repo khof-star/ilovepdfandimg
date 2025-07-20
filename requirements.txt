@@ -1,10 +1,23 @@
-Flask==2.3.2
-PyPDF2==3.0.1
-pdf2image==1.16.3
-Pillow==10.2.0
-docx2pdf==0.1.8
-pdfplumber==0.10.3
-pandas==2.1.3
-python-pptx==0.6.21
+# Core server
+flask
 gunicorn
+
+# PDF tools
+PyPDF2
 img2pdf
+pdf2image
+pdfplumber
+python-docx
+python-pptx
+
+# Images
+Pillow
+
+# Data processing
+pandas
+
+# PDF viewer/extractor
+PyMuPDF
+
+# Optional: file handling, error logs
+python-magic
