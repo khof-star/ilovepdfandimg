@@ -146,7 +146,7 @@ def split_uploaded():
             split_path,
             first_page=1,
             last_page=1,
-            poppler_path=r"C:\poppler\poppler-24.08.0\Library\bin"
+             
         )
 
         thumb_filename = f"{split_filename}_thumb.jpg"
