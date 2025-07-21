@@ -5,7 +5,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 import img2pdf
 from docx2pdf import convert as docx2pdf_convert
-from pdf2docx import Converter
+# from pdf2docx import Converter
 from pptx import Presentation
 from pptx.util import Inches
 import pdfplumber
@@ -913,7 +913,7 @@ if __name__ == "__main__":
         print(f"Test file '{test_file}' does not exist. Skipping PyMuPDF test.")
 
 
-
+'''
 # 📤 Upload form
 @app.route("/pdftoword")
 def pdftoword():
@@ -987,7 +987,7 @@ def get_file_size(path):
 
 
 
-
+'''
 @app.route("/pdftoexcel")
 def pdftoexcel():
     return render_template("pdftoexcel.html")
